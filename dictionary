@@ -1,0 +1,8 @@
+#!/bin/sh
+echo 'Hola amigo! Ronaldo is shit!'
+if [ ! -f /usr/local/bin/Diccinario.jar ]; then
+    read -p "What?! You don't have my software?! Lemme download it(Press Enter)"
+    curl -L -o '/usr/local/bin/Diccinario.jar' 'https://drive.google.com/uc?export=download&id=0B2iNVcH1ZKm8bmVtd0VKMGpFTGc'
+else
+	java -jar /usr/local/bin/Diccinario.jar
+fi
